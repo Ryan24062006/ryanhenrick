@@ -9,14 +9,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <style>
-        
-
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -109,11 +106,40 @@
 
         .whatsapp:hover {
             background-color: #1ebe5b;
+        }
 
-@media (max-width: 500px) {
-    body{background-color: lightblue;}
-}
-            
+        @media (max-width: 500px) {
+            body {
+                padding: 20px;
+                align-items: flex-start;
+            }
+
+            .container {
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .social-link {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.95rem;
+            }
         }
     </style>
 </head>
@@ -122,98 +148,37 @@
         <h1>Agendamento do Society</h1>
         <p><strong>Horários disponíveis:</strong></p>
         <ul>
-            <li>
-                06h às 08h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2006h%20às%2008h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                08h às 10h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2008h%20às%2010h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                10h às 12h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2010h%20às%2012h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                13h às 15h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2013h%20às%2015h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                15h às 17h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2015h%20às%2017h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                17h às 19h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2017h%20às%2019h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                19h às 21h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2019h%20às%2021h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
-            <li>
-                21h às 23h
-                <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2021h%20às%2023h" target="_blank">
-                    <button>Agendar</button>
-                </a>
-            </li>
+            <li>06h às 08h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2006h%20às%2008h" target="_blank"><button>Agendar</button></a></li>
+            <li>08h às 10h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2008h%20às%2010h" target="_blank"><button>Agendar</button></a></li>
+            <li>10h às 12h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2010h%20às%2012h" target="_blank"><button>Agendar</button></a></li>
+            <li>13h às 15h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2013h%20às%2015h" target="_blank"><button>Agendar</button></a></li>
+            <li>15h às 17h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2015h%20às%2017h" target="_blank"><button>Agendar</button></a></li>
+            <li>17h às 19h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2017h%20às%2019h" target="_blank"><button>Agendar</button></a></li>
+            <li>19h às 21h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2019h%20às%2021h" target="_blank"><button>Agendar</button></a></li>
+            <li>21h às 23h <a href="https://wa.me/5581983099422?text=Olá,%20gostaria%20de%20agendar%20o%20horário%2021h%20às%2023h" target="_blank"><button>Agendar</button></a></li>
         </ul>
 
         <div class="footer">
             <div class="social-links">
                 <a class="social-link instagram" href="https://instagram.com/spernadepau" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" style="margin-right: 8px;">
-                        <radialGradient id="instaGradient" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#fd5" />
-                            <stop offset=".328" stop-color="#ff543f" />
-                            <stop offset=".348" stop-color="#fc5245" />
-                            <stop offset=".504" stop-color="#e64771" />
-                            <stop offset=".643" stop-color="#d53e91" />
-                            <stop offset=".761" stop-color="#cc39a4" />
-                            <stop offset=".841" stop-color="#c837ab" />
-                        </radialGradient>
-                        <path fill="url(#instaGradient)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z" />
-                    </svg>
-                    @spernadepau
+                    <i class="fab fa-instagram"></i> @spernadepau
                 </a>
-        
                 <a class="social-link whatsapp" href="https://wa.me/5581986964030?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20Society!" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" style="margin-right: 8px;">
-                        <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"/>
-                    </svg>
-                    (81) 98696-4030
+                    <i class="fab fa-whatsapp"></i> (81) 98696-4030
                 </a>
             </div>
         </div>
+
         <div style="margin-top: 30px; text-align: center;">
             <a href="https://wa.me/5581999352406?text=Olá%20gostaria%20de%20fazer%20um%20orçamento%20pra%20um%20site!" 
                target="_blank" 
                rel="noopener noreferrer" 
                style="text-decoration: none; color: #25D366; font-weight: bold; display: inline-flex; align-items: center;">
-               
-                <!-- Ícone SVG de Dev -->
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGElEQVR4nO2YPUtcQRSGH6ObRjFhMa1GELYQSxcLmzTbJL/ANFZiBK31DxiIXULs7GIvKEJAG/0FWZGAhViKIhKiIDEkcuEVBvHj3pkzXDeZBxaWuzPn3MPOvHPegUQikUj8R7QBQ/wDjAJ/gVVanEUVMk8LUwGOVUhLL683KqJJi7OsQmbLSD4C1A3idAJnwB+gL8f4unKbkCU8BM6B4cBYY/o3tnOMHVbOw5xF30sX8E3Jt4CngfHWFOtdTlHY1Phd4Jlv0ifAigLtAy8Iowf4pU/2PQ9VYE/vsA60+yReUIAfwCDhTHkegjXgVHM/FE06rom/gdfYsK2Y2T4pSgO41PyJIu3DhSZNY0OvlOpM+86HGb1TtjRfPTS4HzjShCXsmFPML0atzQkwcNegbmDHUKFcmoobukwrwIZifQee3xzQ7kjjfgFVycOQ4h7rRUKpOkr2Fehwf/xkrFAu7xX7s2HMmqNkH68fTurBpdTB2kAdKH4mIpY0HCWbjF3ItYE6UFFRC4m5tGIZqNptSyvWZo9loKr3bfYY8hvDQFUekt8YB2IMA7WY50C0bFEyA/VTbclLbJgp0qJYNY1vnSVqQcOnabRo44sYqKhtfIix8jFQUY2Vr9X1NVA3MbO6vpcPIQYq2uVD0eugPsdAZcoVSt3yOqgMA1U6VgaqVKwNVGnEMFClsBrJQJW2vKwNVCKRSCR4tFwBO2+8KSaGYj4AAAAASUVORK5CYII=" 
                      alt="Dev Icon" width="25" height="25" style="margin-right: 8px;" />
-        
                 (81) 99935-2406
             </a>
         </div>
-        
-        
-        
-        
+    </div>
 </body>
 </html>
